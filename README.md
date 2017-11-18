@@ -14,11 +14,11 @@ Once you've got this repo + installed modules requirements, you can:
 
 from */docker* directory, run this command to lauch the containers
 
-$ docker-compose up
+    $ docker-compose up
 
 In another terminal (or tab) run a cURL against the service, like this:
 
-$ curl GET http://localhost:8088/hello -v
+    $ curl GET http://localhost:8088/hello -v
 
 Then ,you should have this display on your terminal:
 
