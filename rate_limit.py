@@ -7,6 +7,10 @@ import redis
 class RateLimiter(object):
  
     def __init__(self, limit=100, window=60):
+        '''
+        StrictRedis is setup for the "redis" container
+        (SEE: comments below)
+        '''
         self.limit = limit
         self.window = window
         self.redis = redis.StrictRedis(host='redis', port=6379)
